@@ -30,7 +30,6 @@ Fnkey -> InsydeDCHU.dll -> Clevco Driver -> WINDOWS ACPI -> EC -> Keyboard RGB
 Enable the EC driver:
 ```
 
-```bash
 sudo modprobe ec_sys write_support=1
 ```
 
