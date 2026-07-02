@@ -20,17 +20,15 @@ Desktop:
 
 # Working
 
-Fnkey->InsydeDCHU.dll->Clevco Driver->WINDOWS ACPI->EC->Keyboard RGB
+Fnkey -> InsydeDCHU.dll -> Clevco Driver -> WINDOWS ACPI -> EC -> Keyboard RGB
 
-  >This Program will directly write into EC-
+  >This Program will directly write into EC instead of using InsydeDCHU.dll 
 
 # Dependencies
 
 ## Kernel
 Enable the EC driver:
 ```
-
-Enable the EC driver:
 
 ```bash
 sudo modprobe ec_sys write_support=1
@@ -99,8 +97,8 @@ Zone:
 ```
 
 > [!NOTE]
-> I found options for some changing colors in multiple zones also even though people have same laptop some Keyboard functionality will change.
-> pls change the zone if the default zone is not working
+> In the fnkey.exe i found options for changing color in multiple zones hard coded .The exe will automatically detect your keyboard type and adjust setting accordingly so there might a chance the zone will be different even though we all use same model.
+>So Please change the zone if the default zone is not working
 
 # Usage
 
